@@ -1,0 +1,322 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.account-section {
+  padding: 40px 20px;
+  height: 90vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #7f765f, #fff);
+}
+.account-container {
+  position: relative;
+  max-width: 400px;
+  width: 100%;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 10px 10px;
+}
+
+.account-container .form {
+  width: 100%;
+  background: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 40px 20px;
+  opacity: 0;
+  display: none;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  border-radius: 10px;
+}
+.account-container .formTwo {
+  border-radius: 10px;
+  background: #fff;
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+  opacity: 0;
+  display: none;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.form.available {
+  opacity: 1;
+  display: block;
+}
+.formTwo.available {
+  opacity: 1;
+  display: block;
+}
+.account-container .login-signup .signup-link,
+.account-container .login-signup .login-link {
+  color: var(--main-color);
+  font-size: 16px;
+}
+.form .loginForm {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.account-container .formTwo .title,
+.account-container .form .title {
+  position: relative;
+  font-size: 27px;
+  font-weight: 600;
+}
+.formTwo .title::before,
+.form .title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  background: #02030f;
+  border-radius: 25px;
+}
+.loginForm .input-field {
+  display: flex;
+  gap: 4px;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgb(233, 226, 226);
+}
+
+.loginForm .input-field input {
+  width: 100%;
+  height: 40px;
+  padding: 6px;
+  border-radius: 10px;
+  border: none;
+}
+
+.input-field input:focus {
+  border-bottom-color: var(--main-color);
+  border: none;
+  outline: none;
+}
+.inputfield input:focus {
+  border-bottom-color: var(--main-color);
+  border: none;
+  outline: none;
+}
+.input-field i {
+  color: var(--main-color);
+  font-size: 23px;
+  cursor: pointer;
+}
+.formTwo .invalid,
+.loginForm .invalid {
+  margin: 0;
+  padding: 0;
+  color: red;
+  font-size: 12px;
+}
+.inputfield i {
+  color: var(--main-color);
+  font-size: 23px;
+  cursor: pointer;
+}
+.input-field .fa-envelope {
+  margin-bottom: 0;
+  font-size: 23px;
+}
+.inputfield .fa-envelope {
+  margin-bottom: 0;
+  font-size: 23px;
+}
+.checkbox-content input[type="checkbox"] {
+  cursor: pointer;
+}
+.formTwo .checkbox-text,
+.form .checkbox-text {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.checkbox-text .checkbox-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formTwo .text,
+.form .text {
+  color: #333;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+.formTwo .signup-link:hover {
+  text-decoration: underline;
+}
+
+.formTwo .button input,
+.form .button input {
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  width: 150px;
+  border-radius: 6px;
+  padding: 8px 40px;
+  letter-spacing: 1px;
+  background-color: var(--main-color);
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  margin-bottom: 12px;
+}
+
+.button input:hover {
+  background-color: #353747;
+  letter-spacing: 2px;
+}
+
+.signUpform {
+  padding: 14px 0px 5px;
+  width: 100%;
+}
+.formTwo .signUpform .inputfield {
+  display: flex;
+  gap: 4px;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgb(233, 226, 226);
+}
+
+.signUpform .inputfield input {
+  width: 100%;
+  height: 40px;
+  padding: 6px;
+  border-radius: 10px;
+  border: none;
+}
+
+@media screen and (max-width: 500px) {
+  .loginForm .input-field {
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    padding: 3px;
+    border-radius: 10px;
+    background-color: rgb(233, 226, 226);
+  }
+  .loginForm .input-field input {
+    width: 100%;
+    height: 30px;
+    padding: 6px;
+    border-radius: 10px;
+    border: none;
+  }
+  .input-field .fa-envelope,
+  .inputfield .fa-envelope {
+    margin-bottom: 0;
+    font-size: 16px;
+    margin: 0;
+  }
+  .input-field i {
+    color: var(--main-color);
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .inputfield i {
+    color: var(--main-color);
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .formTwo .text,
+  .form .text {
+    color: #333;
+    font-size: 10px;
+    margin-top: 6px;
+  }
+
+  .signUpform .inputfield input {
+    width: 100%;
+    height: 30px;
+    padding: 4px;
+    border-radius: 10px;
+    border: none;
+  }
+  .account-container .formTwo .title,
+  .account-container .form .title {
+    position: relative;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .formTwo .button input,
+  .form .button input {
+    border: none;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    width: 100px;
+    border-radius: 6px;
+    padding: 6px 20px;
+    letter-spacing: 1px;
+    background-color: var(--main-color);
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    margin-bottom: 7px;
+  }
+}
+
+/* keyframea */
+/* @media query */
+
+@keyframes slideOutToBottom {
+  0% {
+    transform: scale(1);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: scale(0, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

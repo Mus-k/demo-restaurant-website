@@ -1,0 +1,319 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.payment-section {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #7f765f, #fff);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+}
+.payment-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.payment-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.payment-container .form {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 500px;
+  padding-top: 160px;
+}
+
+.payment-container .form .inputBox {
+  margin-top: 20px;
+}
+.payment-container .form .inputBox p {
+  display: block;
+  color: #999;
+  padding-bottom: 0px;
+}
+
+.payment-container .form .inputBox input,
+.payment-container .form .inputBox select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  color: #444;
+}
+.payment-container .form .inputBox input:focus {
+  outline: none;
+}
+.payment-container .form .flexbox {
+  display: flex;
+  gap: 15px;
+}
+.payment-container .form .flexbox .inputBox {
+  flex: 1 1 150px;
+}
+.payment-container .form .payment-btns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    }
+
+    
+.payment-container .form .submit-btn,
+.payment-container .form .cancel-btn {
+  width: 100%; 
+   background: #8c7334;
+  margin-top: 20px;
+  padding: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.2s linear;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+
+.payment-container .form .cancel-btn:hover,
+.payment-container .form .submit-btn:hover {
+  letter-spacing: 2px;
+  opacity: 0.8;
+}
+
+.payment-container .card-container {
+  margin-bottom: -150px;
+  position: relative;
+  height: 250px;
+  width: 400px;
+  /* max-width: 250px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home {
+  background: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.home .hpage {
+  padding: 8px;
+  color: #8c7334;
+  text-decoration: none;
+}
+.payment-container .card-container .front {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(45deg, #8c7334, #fff);
+  border-radius: 5px;
+  backface-visibility: hidden;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  transform: perspective(1000px) rotateY(0deg);
+  transition: transform 0.4s ease-out;
+}
+
+.payment-container .card-container .front .image {
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+}
+
+.payment-container .card-container .front .image img {
+  height: 30px;
+}
+
+.payment-container .card-container .front .card-number-box {
+  padding: 30px 0;
+  font-size: 22px;
+  color: #fff;
+}
+
+.payment-container .card-container .front .flexbox {
+  display: flex;
+  justify-content: space-between;
+}
+.payment-container .card-container .front .flexbox:nth-child(1) {
+  margin-right: auto;
+}
+
+.payment-container .card-container .front .flexbox .box {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.payment-container .card-container .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(45deg, #8c7334, #fff);
+  border-radius: 5px;
+  padding: 20px 0;
+  text-align: right;
+  backface-visibility: hidden;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  transform: perspective(1000px) rotateY(180deg);
+  transition: transform 0.4s ease-out;
+}
+
+.payment-container .card-container .back .stripe {
+  background: #000;
+  width: 100%;
+  margin: 10px 0;
+  height: 50px;
+}
+.payment-container .card-container .back .box {
+  padding: 0 20px;
+}
+.payment-container .card-container .back .box span {
+  color: #fff;
+  font-size: 15px;
+}
+.payment-container .card-container .back .box .cvv-box {
+  height: 50px;
+  padding: 10px;
+  color: #333;
+  margin-top: 5px;
+  background: #fff;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.payment-container .card-container .back .box img {
+  margin-top: 30px;
+  height: 30px;
+}
+
+@media screen and (max-width: 650px) {
+  .payment-container .form {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    padding-top: 160px;
+  }
+  .payment-container .card-container {
+    margin-bottom: -150px;
+    position: relative;
+    height: 200px;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .flexbox .inputBox .not-mobile {
+    display: none;
+  }
+  .payment-container .form {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    padding-top: 160px;
+  }
+  .payment-container .card-container {
+    margin-bottom: -150px;
+    position: relative;
+    height: 200px;
+    width: 80%;
+  }
+
+  .payment-container .card-container .front .image {
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+  }
+
+  .payment-container .card-container .front .image img {
+    height: 25px;
+  }
+
+  .payment-container .card-container .front .card-number-box {
+    padding: 20px 0;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  .payment-container .card-container .front .flexbox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .payment-container .card-container .front .flexbox:nth-child(1) {
+    margin-right: auto;
+  }
+
+  .payment-container .card-container .front .flexbox .box {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  .payment-container .card-container .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, #8c7334, #fff);
+    border-radius: 5px;
+    padding: 14px 0;
+    text-align: right;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    transform: perspective(1000px) rotateY(180deg);
+    transition: transform 0.4s ease-out;
+  }
+
+  .payment-container .card-container .back .stripe {
+    background: #000;
+    width: 100%;
+    margin: 10px 0;
+    height: 40px;
+  }
+  .payment-container .card-container .back .box {
+    padding: 0 15px;
+  }
+  .payment-container .card-container .back .box span {
+    color: #fff;
+    font-size: 12px;
+  }
+  .payment-container .card-container .back .box .cvv-box {
+    height: 30px;
+    padding: 10px;
+    color: #333;
+    margin-top: 5px;
+    background: #fff;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  .payment-container .card-container .back .box img {
+    margin-top: 10px;
+    height: 20px;
+  }
+}
