@@ -288,32 +288,58 @@ nav .nav-center li a {
 }
 
 .contact-form {
+  position: relative;
   display: flex;
-  gap: 20px;
+  gap: 10px;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   padding: 0px;
 }
-
+.form-bottom,
 .form-left,
 .form-right {
-  display: flex;
-  gap: 10px;
-}
-.form-right .box-left input {
-  max-width: 280px;
-}
-
-.input-box {
-  display: flex;
-  margin: 20px;
+  position: relative;
   width: 100%;
+  max-width: 600px;
+  display: flex;
+  gap: 5px;
+  /* margin: 4px 20px; */
+  /* padding: 5px 20px; */
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.form-left .input-box input{
+  width: 100%;
+  flex: 1;
+}
+.form-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.textArea {
+  width: 100%;
+  display: flex;
   flex-direction: column;
 }
+.form-right .input-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.form-right  .box-left {
+  width: 100%;}
+.form-right  .box-left input {
+  max-width: 280px;
+}
+.form-right  .box-right input {
+  flex: 1;
+}
+
+
 .input-box input {
-  font-size: 25px;
-  
+  font-size: 20px;
 }
 .contact-btn {
   border: none;
@@ -353,6 +379,7 @@ nav .nav-center li a {
   .contact-container {
     gap: 20px;
     flex-direction: column;
+    padding: 20px;
   }
 
   .image-div img {
@@ -361,6 +388,9 @@ nav .nav-center li a {
   }
   .contact-title {
     font-size: 45px;
+  }
+  .form-right  .box-left input {
+    max-width: 261px;
   }
 }
 
@@ -388,20 +418,22 @@ nav .nav-center li a {
   }
 
   .contact-form {
-    padding: 10px 30px;
+    margin: 10px 30px;
     display: flex;
-    gap: 20px;
+    gap: 10px;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 0px;
   }
 
   .form-left,
   .form-right {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0px;
+  }
+  .form-right  .box-left input {
+    max-width:310px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -416,6 +448,16 @@ nav .nav-center li a {
   }
   .contact-title {
     font-size: 25px;
+  }
+  .contact-form {
+   
+    margin: 4px 20px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px;
   }
 }
 
