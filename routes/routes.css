@@ -304,12 +304,12 @@ nav .nav-center li a {
   max-width: 600px;
   display: flex;
   gap: 5px;
-  /* margin: 4px 20px; */
-  /* padding: 5px 20px; */
+  margin: 4px 20px;
+  padding: 5px 20px;
   justify-content: flex-start;
   align-items: flex-start;
 }
-.form-left .input-box input{
+.form-left .input-box input {
   width: 100%;
   flex: 1;
 }
@@ -328,15 +328,13 @@ nav .nav-center li a {
   display: flex;
   flex-direction: column;
 }
-.form-right  .box-left {
-  width: 100%;}
-.form-right  .box-left input {
-  max-width: 280px;
-}
-.form-right  .box-right input {
-  flex: 1;
+.form-right .box-left {
+  width: 100%;
 }
 
+.form-right .box-right input {
+  flex: 1;
+}
 
 .input-box input {
   font-size: 20px;
@@ -357,6 +355,19 @@ nav .nav-center li a {
 /* contact media query */
 
 @media screen and (max-width: 1025px) {
+  .form-bottom,
+  .form-left,
+  .form-right {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
   .contact {
     padding: 20px 60px;
   }
@@ -389,9 +400,7 @@ nav .nav-center li a {
   .contact-title {
     font-size: 45px;
   }
-  .form-right  .box-left input {
-    max-width: 261px;
-  }
+ 
 }
 
 @media screen and (max-width: 600px) {
@@ -432,9 +441,7 @@ nav .nav-center li a {
     flex-direction: column;
     gap: 0px;
   }
-  .form-right  .box-left input {
-    max-width:310px;
-  }
+
 }
 @media screen and (max-width: 500px) {
   .contact {
@@ -450,7 +457,6 @@ nav .nav-center li a {
     font-size: 25px;
   }
   .contact-form {
-   
     margin: 4px 20px;
     display: flex;
     gap: 10px;
