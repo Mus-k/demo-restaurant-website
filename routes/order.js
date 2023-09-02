@@ -482,7 +482,7 @@ checkout.addEventListener("click", () => {
   const textareaValue = textareaInput.value;
   const phoneValue = phone.value;
   if (phone.value === "" || phone.value.length < 7) {
-    alert("please enter number minimum 8");
+    alert("please enter your number minimum 8");
     window.scrollTo(0, 400);
     inputBox.classList.add("active");
     return;
