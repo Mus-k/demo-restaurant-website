@@ -475,13 +475,16 @@ selectOption.addEventListener("change", function () {
     optionvisible = true;
   }
 });
-
+const inputBox = document.querySelector(".input");
+const inputText = document.querySelector(".inputText");
 checkout.addEventListener("click", () => {
   const selectedOption = selectOption.value;
   const textareaValue = textareaInput.value;
   const phoneValue = phone.value;
   if (phone.value === "" || phone.value.length < 7) {
     alert("please enter number minimum 8");
+    window.scrollTo(0, 400);
+    inputBox.classList.add("active");
     return;
   } else if (
     optionvisible &&
@@ -489,6 +492,7 @@ checkout.addEventListener("click", () => {
     textareaValue.length < 6
   ) {
     alert("please enter address minimum 6 letters");
+    inputText.classList.add("active");
     return;
   } else {
     validateInputs(phoneValue, textareaValue, selectedOption);
@@ -499,13 +503,19 @@ checkout.addEventListener("click", () => {
   } else {
     setTimeout(() => {
       window.location.href = "./payment.html";
-    }, 3000);
+    }, 1000);
   }
   textareaInput.value = "";
   phone.value = "";
   localStorage.removeItem("CART");
 });
-
+document.getElementById("orderCancel").addEventListener("click", () => {
+  textareaInput.value = "";
+  phone.value = "";
+  localStorage.removeItem("CART");
+  cart = [];
+  window.location.reload();
+});
 function validateInputs(phone, textarea, option) {}
 
 function generateStyledWeekdays() {

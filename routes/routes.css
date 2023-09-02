@@ -206,8 +206,6 @@ nav .nav-center li a {
   background-color: #8c7334;
 } */
 
-
-
 /* contact csss start here */
 
 .contact {
@@ -304,18 +302,18 @@ nav .nav-center li a {
   gap: 10px;
 }
 .form-right .box-left input {
- 
- max-width: 280px;
- 
+  max-width: 280px;
 }
 
 .input-box {
   display: flex;
+  margin: 20px;
   width: 100%;
   flex-direction: column;
 }
 .input-box input {
   font-size: 25px;
+  
 }
 .contact-btn {
   border: none;
@@ -546,13 +544,11 @@ nav .nav-center li a {
   }
 }
 
-
-
 .footer-item a {
   text-decoration: none;
   color: var(--text-color);
 }
-.about-section-one{
+.about-section-one {
   /* background-color: cyan; */
   padding: 20px 100px;
   height: calc(100vh - 120px);
@@ -561,12 +557,12 @@ nav .nav-center li a {
   align-items: center;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
-.about-right-1{
+.about-right-1 {
   flex: 1;
 }
-.about-section-2{
+.about-section-2 {
   margin-top: 40px;
-  background-color:#f5f5f5;
+  background-color: #f5f5f5;
   display: flex;
   flex-direction: column;
   padding: 130px;
@@ -579,37 +575,33 @@ nav .nav-center li a {
   text-align: center;
   background-color: #8c7334;
 } */
-.small-heading{
+.small-heading {
   color: rgb(210, 165, 86);
   font-family: "Playfair Display";
   font-weight: 500;
- 
 }
-.medium-explanation{
+.medium-explanation {
   color: black;
   font-family: "Playfair Display";
   font-weight: 500;
- 
 }
 
-#medium-explanation2{
+#medium-explanation2 {
   color: black;
   font-family: Playfair Display;
   font-weight: 500;
- 
 }
 
-.order-button{
+.order-button {
   font-weight: 400;
   font-size: 18px;
   padding: 15px;
   color: rgb(210, 165, 86);
   border: 2px solid rgb(210, 165, 86);
   background: none;
- 
 }
 
-.section-3-container{
+.section-3-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -618,18 +610,17 @@ nav .nav-center li a {
   margin: 30px;
 }
 
-
 @media screen and (max-width: 890px) {
-  .section-3-container{
+  .section-3-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 30px;
-    margin: 30px; 
+    margin: 30px;
     gap: 10px;
   }
 }
-.about-section-5{
+.about-section-5 {
   display: flex;
   padding: 150px;
   flex-direction: column;
@@ -638,17 +629,17 @@ nav .nav-center li a {
   text-align: center;
   gap: 10px;
 }
-.about-section-5 h4{
+.about-section-5 h4 {
   color: black;
   font-family: Playfair Display;
   font-weight: 500;
 }
 
-.about-section-5 h3{
+.about-section-5 h3 {
   color: rgb(210, 165, 86);
   font-family: Playfair Display;
   font-weight: 500;
 }
-.about-items i{
+.about-items i {
   color: rgb(140, 115, 52);
 }

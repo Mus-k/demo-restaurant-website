@@ -470,6 +470,11 @@ textarea::resizer {
 }
 
 /* Optional: Add some focus styling */
+.custom-textarea .inputText.active,
+.phone-div .input.active{
+  box-shadow: 0 0 5px rgba(5, 114, 230, 0.5);
+}
+
 .phone-div input:focus,
 textarea:focus {
   outline: none;
@@ -492,7 +497,12 @@ textarea:focus {
 .coupon {
   padding: 5px;
 }
-
+.orderBtns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
 .order-button {
   width: 100%;
   padding: 4px;
@@ -505,6 +515,8 @@ textarea:focus {
 }
 .order-button:hover {
   background-color: antiquewhite;
+  outline: none;
+  border: none;
 }
 .fa-chevron-right {
   font-size: 13px;
