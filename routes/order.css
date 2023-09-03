@@ -474,7 +474,7 @@ textarea::resizer {
 
 /* Optional: Add some focus styling */
 .custom-textarea .inputText.active,
-.phone-div .input.active{
+.phone-div .input.active {
   box-shadow: 0 0 5px rgba(5, 114, 230, 0.5);
 }
 
@@ -501,6 +501,7 @@ textarea:focus {
   padding: 5px;
 }
 .orderBtns {
+  min-width: 230px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -722,25 +723,24 @@ textarea:focus {
     gap: 5px;
     margin: 10px 0px;
   }
+ 
   .main-card {
     display: flex;
-    width: 100%;
-    gap: 0px;
-    flex-basis: 100%;
+    gap: 0;
     background-color: #ffff;
     border: 2px solid var(--text-grey);
     transition: all 0.3s ease-in;
   }
 
   .main-card img {
-    width: 100px;
+    width: 80px;
   }
   .nested-One {
     display: flex;
-    flex: 1;
-    flex-direction: column;
+    flex: 0.3;
+    flex-direction: row;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     padding: 5px;
   }
   .nested-One h4 {
@@ -751,9 +751,9 @@ textarea:focus {
     padding: 5px;
   }
   .nested-Two {
-    margin-top: 20px;
-    padding: 8px;
-    flex: 1;
+    margin-top: 0px;
+    padding-bottom: 6px;
+    flex: 0.3;
     justify-content: flex-end;
     align-items: center;
     display: flex;
@@ -761,16 +761,18 @@ textarea:focus {
     gap: 1px;
   }
   .nested-Two p {
-    padding-top: 6px;
+    padding-top: 0px;
     font-size: 14px;
+    margin: 0;
   }
   .nested-Two .order-link {
     font-size: 14px;
     text-decoration: none;
     background: var(--main-color);
-    padding: 6px 14px;
+    padding: 3px 14px;
     color: #ffff;
     transition: all 0.3s ease-in;
+    margin-bottom: 6px;
   }
   .order-link :hover {
     background-color: antiquewhite;
@@ -798,13 +800,13 @@ textarea:focus {
     padding: 0 5px;
     gap: 0;
     margin: 0px;
-    flex: 0.5;
+    flex: 0.3;
   }
   .nested-One {
     padding: 0;
     display: flex;
-    flex: 0.5;
-    height: 30px;
+    flex: 0.3;
+    height: 0px;
   }
   .menuCard-container .menu-card h2 {
     font-size: 18px;
