@@ -83,21 +83,6 @@
       class="transition-fade"
       style="height: auto; width: 100%"
     >
-      <!-- landing page  section -->
-      <!-- <section class="landing-section">
-        <div class="landing-container">
-          <div class="landing-left">
-            <h1 class="landingTilte">
-              Welcome to our <br />
-              Restaurant
-            </h1>
-            <h3>New restaurant in New York, <br />USA.</h3>
-          </div>
-          <div class="landing-right">
-            <img src="./images/home1.jpg" />
-          </div>
-        </div>
-      </section> -->
       <div class="slider-container">
         <div class="overlay">
           <h1>Fresh and Locally Sourced</h1>
@@ -109,21 +94,34 @@
           </div>
 
           <button class="overlay-btn">
-            <a href="/routes/order.html">Menu</a>
+            <a href="/routes/order.html">Visit Our Menu</a>
           </button>
         </div>
         <div class="slider">
           <div class="slide">
-            <img
-              src="./images/sliderImages/terje-desktop.jpg"
-              alt="first slide"
-            />
+            <picture>
+              <source
+                media="(max-width:800px)"
+                srcset="./images/sliderImages/terje-mobile.jpg"
+              />
+
+              <img
+                src="./images/sliderImages/terje-desktop.jpg"
+                alt="first slide"
+              />
+            </picture>
           </div>
           <div class="slide">
+            <picture>
+              <source
+                media="(max-width:800px)"
+                srcset="./images/sliderImages/vegetables.jpg"
+              />
             <img
               src="./images/sliderImages/walrus-desktop.jpg"
               alt="first slide"
             />
+            </picture>
           </div>
         </div>
         <div class="dots-container"></div>
@@ -136,7 +134,34 @@
       </div>
 
       <!-- ends-->
-
+<div class="res-intro">
+<div class="res-container">
+  <div class="intro-item">
+    <h1><i class="fa-solid fa-user-tie icons"></i></h1>
+    <h3>Master Chef</h3>
+    <p class="">Lorem Ipsum is simply dummy
+       text of the printing and typesetting industry.</p>
+  </div>
+  <div class="intro-item">
+    <h1><i class="fa-solid fa-utensils icons"></i></h1>
+    <h3>Quality food</h3>
+    <p class="">Lorem Ipsum is simply dummy
+       text of the printing and typesetting industry.</p>
+  </div>
+  <div class="intro-item">
+    <h1><i class="fa-solid fa-cart-shopping icons"></i></h1>
+    <h3>Onliner Order</h3>
+    <p class="">Lorem Ipsum is simply dummy
+       text of the printing and typesetting industry.</p>
+  </div>
+  <div class="intro-item">
+    <h1><i class="fa-solid fa-headset icons"></i></h1>
+    <h3>24/7 Service</h3>
+    <p class="">Lorem Ipsum is simply dummy
+       text of the printing and typesetting industry.</p>
+  </div>
+</div>
+</div>
       <!-- Taste the world's cuisine  section-->
 
       <section class="delight-section">
@@ -153,32 +178,6 @@
               out-of-the-ordinary form.
             </p>
             <p class="order"><a href="./routes/order.html">Order online</a></p>
-          </div>
-        </div>
-      </section>
-
-      <!-- ends-->
-
-      <!-- icons section Excellent coffee Rest comfortably Delicious food -->
-
-      <section class="excelence-section">
-        <div class="excelence-container">
-          <div class="exce-item">
-            <h1><i class="fa-solid fa-mug-saucer"></i></h1>
-            <h3>Excellent coffee</h3>
-            <p class="item-text">
-              We offer only the finest coffee from the finest beans.
-            </p>
-          </div>
-          <div class="exce-item">
-            <h1><i class="fa-solid fa-bed"></i></h1>
-            <h3>Rest comfortably</h3>
-            <p class="item-text">We offer guest rooms for travelers.</p>
-          </div>
-          <div class="exce-item">
-            <h1><i class="fa-solid fa-utensils"></i></h1>
-            <h3>Delicious food</h3>
-            <p class="item-text">Original cuisine at will.</p>
           </div>
         </div>
       </section>
@@ -211,45 +210,57 @@
           We are waiting for you from Monday to Sunday! You can also place your
           order online.
         </h4>
-        <button>Order now</button>
+        <button>
+          <a href="/routes/order.html">Order Now</a>
+        </button>
       </div>
 
       <!-- footer  section -->
-      <section class="footer-section" style="background-color: white">
-        <footer class="footer-container">
-          <div class="footer-item">
-            <img src="./images/restaurantlogo.png" />
+      <section>
+        <div>
+          <h3>Company</h3>
+          <div>
+            <p><i class="fa-solid fa-chevron-right"></i><a href="">About Us</a></p>
+            <p><i class="fa-solid fa-chevron-right"></i><a href="">Contact Us</a></p>
+            <p><i class="fa-solid fa-chevron-right"></i><a href="">Reservation</a></p>
+            <p><i class="fa-solid fa-chevron-right"></i><a href="">Privacy Policy</a></p>
+            <p><i class="fa-solid fa-chevron-right"></i><a href="">Terms & Condition</a></p>
           </div>
-          <div class="footer-item">
-            <a href="index.html">Home</a>
-            <a href="./routes/about.html">About Us</a>
-            <a href="./routes/gallery.html">Gallery</a>
-            <a href="">Contact</a>
-            <a href="./routes/order.html">Order Online</a>
-          </div>
-          <div class="footer-item">
-            <p>
-              <span><i class="fa-solid fa-phone-volume"></i></span> +90
-              5050896539
+        </div>
+        <!--  -->
+        <div>
+          <h3>Contact</h3>
+          <div>
+            <p><i class="fa-solid fa-location-dot"></i><a href="">About Us</a></p>
+            <p><i class="fa-solid fa-phone"></i><a href="">Contact Us</a></p>
+            <p><i class="fa-solid fa-envelope"></i><a href="">Reservation</a></p>
+           
+            <p><a href=""><i class="fa-brands fa-whatsapp"></i></a>
+              <p><a href=""> <i class="fa-brands fa-instagram"></i></a>
+            <p><a href="">
+            <i class="fa-brands fa-facebook"></i>
+                </a>
             </p>
-            <p>
-              <span
-                ><i class="fa-regular fa-envelope footer-enveloper"></i
-              ></span>
-              info@bigadigitalagency.com
-            </p>
+            <p><a href=""><i class="fa-brands fa-twitter"></i></a></p>
           </div>
-          <div class="footer-item-last">
-            <p>Online Food Ordering System by</p>
-            <div class="company-name">
-              <a href="https://www.bigadigitalagency.com/" target="_blank"
-                >Biga Digital Agency</a
-              >
+        </div>
+        <!--  -->
+        <div>
+          <h3>Opening</h3>
+          <div>
+            <div>
+              <p>Monday - Saturday </p>
+              <p>09AM - 09PM</p>
+            </div>
+            <div>
+              <p>Sunday
+               </p>
+              <p> 10AM - 08PM </p>
             </div>
           </div>
-        </footer>
+        </div>
       </section>
-    </section>
+   
     <!--javascript -->
 
     <script src="./script.js"></script>

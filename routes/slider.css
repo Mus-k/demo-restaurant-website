@@ -29,7 +29,7 @@
   color: #ffff;
 }
 .overlay .intro-text {
-  color: rgb(230, 87, 40);
+  color: #fea116;
 }
 .landing-text p {
   font-size: 20px;
@@ -42,7 +42,7 @@
   outline: none;
   padding: 9px 20px;
   background-color: #ffff;
-  border: 1px solid rgb(230, 87, 40);
+  border: 1px solid #fea116;
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -56,7 +56,7 @@
   color: #ffff;
 }
 .overlay-btn:hover {
-  background-color: rgb(230, 87, 40);
+  background-color: #fea116;
 }
 .slide {
   flex: 0 0 100%;
@@ -80,7 +80,7 @@
 .dot {
   width: 10px;
   height: 10px;
-  background-color: #e65728;
+  background-color: #fea116;
   border-radius: 50%;
   margin: 0 5px;
   cursor: pointer;
@@ -132,10 +132,10 @@
     font-size: 30px;
   }
   .overlay .intro-text2 {
-    color: rgb(230, 87, 40);
+    color: #fea116;
   }
   .landing-text p {
     font-size: 15px;
-    color: rgb(230, 87, 40);
+    color: #fea116;
   }
 }
