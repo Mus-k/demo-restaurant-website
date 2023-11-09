@@ -21,18 +21,22 @@
   align-items: center;
   flex-direction: column;
   gap: 10px;
+  padding: 0px 10px;
 }
 .overlay h1 {
   font-weight: 800;
   font-family: sans-serif;
   color: #ffff;
 }
-.overlay .landing-text {
+.overlay .intro-text {
   color: rgb(230, 87, 40);
 }
 .landing-text p {
   font-size: 20px;
   font-weight: 400;
+}
+.overlay .intro-text2 {
+  color: #ffff;
 }
 .overlay-btn {
   outline: none;
@@ -105,4 +109,33 @@
 
 .next-button {
   right: 10px;
+}
+
+@media screen and (max-width: 769px) {
+  .overlay h1 {
+    font-weight: 500;
+  }
+  .landing-text p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .overlay {
+    padding: 0px 14px;
+  }
+  .intro-text {
+    display: none;
+  }
+  .overlay h1 {
+    font-weight: 200;
+    font-size: 30px;
+  }
+  .overlay .intro-text2 {
+    color: rgb(230, 87, 40);
+  }
+  .landing-text p {
+    font-size: 15px;
+    color: rgb(230, 87, 40);
+  }
 }
