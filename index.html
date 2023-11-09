@@ -28,6 +28,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="routes/routes.css" />
+    <link rel="stylesheet" href="routes/slider.css" />
     <link rel="stylesheet" href="./routes/loader.css" />
     <title>Restaurant</title>
   </head>
@@ -83,7 +84,7 @@
       style="height: auto; width: 100%"
     >
       <!-- landing page  section -->
-      <section class="landing-section">
+      <!-- <section class="landing-section">
         <div class="landing-container">
           <div class="landing-left">
             <h1 class="landingTilte">
@@ -96,7 +97,44 @@
             <img src="./images/home1.jpg" />
           </div>
         </div>
-      </section>
+      </section> -->
+      <div class="slider-container">
+        <div class="overlay">
+          <h1>Fresh and Locally Sourced</h1>
+          <div class="landing-text">
+            <p>
+              We believe in the power of fresh, locally sourced ingredients.
+            </p>
+            <p style="color: #ffff">Taste the difference that quality makes.</p>
+          </div>
+
+          <button class="overlay-btn">
+            <a href="/routes/order.html">Menu</a>
+          </button>
+        </div>
+        <div class="slider">
+          <div class="slide">
+            <img
+              src="./images/sliderImages/terje-desktop.jpg"
+              alt="first slide"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="./images/sliderImages/walrus-desktop.jpg"
+              alt="first slide"
+            />
+          </div>
+        </div>
+        <div class="dots-container"></div>
+        <button class="prev-button">
+          <i class="fa-solid fa-angles-left"></i>
+        </button>
+        <button class="next-button">
+          <i class="fa-solid fa-angles-right"></i>
+        </button>
+      </div>
+
       <!-- ends-->
 
       <!-- Taste the world's cuisine  section-->
@@ -216,5 +254,6 @@
 
     <script src="./script.js"></script>
     <script src="./routes/loader.js"></script>
+    <script src="./routes/slider.js"></script>
   </body>
 </html>
