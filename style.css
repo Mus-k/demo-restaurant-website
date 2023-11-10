@@ -5,7 +5,7 @@
   --width: 100%;
   --text-size: 16px;
   --text-white: #ffff;
-  --main-color: #fea116;
+  --main-color: #8c7334;
   --text-black: black;
 }
 
@@ -331,7 +331,7 @@ nav .nav-center li a {
 
 /*   <!-- Taste the world's cuisine  section--> */
 .res-intro {
-  background: #ebb96e;
+  background: #8c7334;
   padding: 50px 30px;
 }
 .res-container {
@@ -349,7 +349,7 @@ nav .nav-center li a {
   color: black;
 }
 .res-container .intro-item .icons {
-  color: #fea116;
+  color: #8c7334;
 }
 
 @media screen and (max-width: 980px) {
@@ -514,7 +514,7 @@ nav .nav-center li a {
   font-weight: 500;
   font-size: 67px;
   background: transparent;
-  color: #fea116;
+  color: #8c7334;
 }
 .visit-us p {
   font-size: 1.777em;
@@ -533,7 +533,7 @@ nav .nav-center li a {
 .visit-us button a {
   font-size: 14px;
   font-family: Open Sans;
-  color: #fea116;
+  color: #8c7334;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
@@ -558,7 +558,7 @@ nav .nav-center li a {
     font-weight: 500;
     font-size: 50px;
     background: transparent;
-    color: #fea116;
+    color: #8c7334;
   }
   .visit-us p {
     font-size: 1em;
@@ -581,7 +581,7 @@ nav .nav-center li a {
     font-weight: 400;
     font-size: 50px;
     background: transparent;
-    color: #fea116;
+    color: #8c7334;
   }
   .visit-us p {
     font-size: 0.8em;

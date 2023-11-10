@@ -475,7 +475,6 @@ nav .nav-center li a {
 }
 
 .about-section-one {
-  /* background-color: cyan; */
   padding: 20px 100px;
   height: calc(100vh - 120px);
   display: flex;
@@ -497,10 +496,6 @@ nav .nav-center li a {
   text-align: center;
   gap: 20px;
 }
-/* .about-section-2{
-  text-align: center;
-  background-color: #8c7334;
-} */
 .small-heading {
   color: rgb(210, 165, 86);
   font-family: "Playfair Display";
@@ -568,4 +563,26 @@ nav .nav-center li a {
 }
 .about-items i {
   color: rgb(140, 115, 52);
+}
+
+@media screen and (max-width: 600px) {
+  .about-section-2 {
+    margin: 0;
+    padding: 20px;
+  }
+  .small-heading {
+    font-size: 20px;
+  }
+  .medium-explanation {
+    font-size: 17px;
+  }
+  .detail {
+    font-size: 15px;
+  }
+  .about-section-3 .about-items h3 {
+    font-size: 20px;
+  }
+  .about-section-5 {
+    padding: 50px 30px;
+  }
 }

@@ -1,5 +1,5 @@
 .footer {
-  background-color: #333;
+  background-color: #8c7334;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -16,7 +16,7 @@
 }
 
 .footer-container .footer-item h3 {
-  color: #fea116;
+  color: black;
 }
 .footer-container .footer-item div p a {
   color: #fff;
@@ -24,7 +24,7 @@
   text-decoration: none;
 }
 .footer-container .footer-item div p .fa-solid {
-  color: #fea116;
+  color: #18150d;
   cursor: pointer;
 }
 .social-item {

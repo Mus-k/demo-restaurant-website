@@ -31,6 +31,7 @@
     <link rel="shortcut icon" href="../images/rest.ico" type="image/x-icon" />
     <link rel="stylesheet" href="routes.css" />
     <link rel="stylesheet" href="gallery.css" />
+    <link rel="stylesheet" href="footer.css" />
     <link rel="stylesheet" href="loader.css" />
     <title>gallery</title>
   </head>
@@ -42,7 +43,9 @@
     <header class="header">
       <nav>
         <div class="nav-logo">
-         <a href="../index.html"> <img src="../images/restaurantlogo.png" /></a>
+          <a href="../index.html">
+            <img src="../images/restaurantlogo.png"
+          /></a>
         </div>
         <div class="menu">
           <ul class="nav-center">
@@ -124,36 +127,81 @@
       </div>
     </div>
     <!-- gallery images ends -->
-    <section class="footer-section">
-      <footer class="footer-container">
+    <section class="footer">
+      <div class="footer-container">
         <div class="footer-item">
-          <img src="../images/restaurantlogo.png" />
-        </div>
-        <div class="footer-item">
-          <a href="index.html">Home</a>
-          <a href="./routes/about.html">About Us</a>
-          <a href="./routes/gallery.html">Gallery</a>
-          <a href="">Contact</a>
-          <a href="./order.html">Order Online</a>
-        </div>
-        <div class="footer-item">
-          <p>
-            <span><i class="fa-solid fa-phone-volume"></i></span> +90 5050896539
-          </p>
-          <p>
-            <span><i class="fa-regular fa-envelope footer-enveloper"></i></span>
-            info@bigadigitalagency.com
-          </p>
-        </div>
-        <div class="footer-item-last">
-          <p>Online Food Ordering System by</p>
-          <div class="company-name">
-            <a href="https://www.bigadigitalagency.com/" target="_blank"
-              >Biga Digital Agency</a
-            >
+          <h3 class="title-company">Company</h3>
+          <div>
+            <p>
+              <i class="fa-solid fa-chevron-right"></i><a href="">About Us</a>
+            </p>
+            <p>
+              <i class="fa-solid fa-chevron-right"></i><a href="">Contact Us</a>
+            </p>
+            <p>
+              <i class="fa-solid fa-chevron-right"></i
+              ><a href="">Reservation</a>
+            </p>
+            <p>
+              <i class="fa-solid fa-chevron-right"></i
+              ><a href="">Privacy Policy</a>
+            </p>
+            <p>
+              <i class="fa-solid fa-chevron-right"></i
+              ><a href="">Terms & Condition</a>
+            </p>
           </div>
         </div>
-      </footer>
+        <!--  -->
+        <div class="footer-item">
+          <h3>Contact</h3>
+          <div>
+            <p>
+              <i class="fa-solid fa-location-dot"></i
+              ><a href="">123 Street, Istanbul, Turkiye</a>
+            </p>
+            <p>
+              <i class="fa-solid fa-phone"></i><a href="">+012 345 67890</a>
+            </p>
+            <p>
+              <i class="fa-solid fa-envelope"></i
+              ><a href="">bigadigitalAgency.com</a>
+            </p>
+
+            <div class="social-item">
+              <p>
+                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+              </p>
+              <p>
+                <a href=""> <i class="fa-brands fa-instagram"></i></a>
+              </p>
+              <p>
+                <a href="">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </p>
+              <p>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="footer-item">
+          <h3>Opening</h3>
+          <div>
+            <div class="open-details">
+              <p>Monday - Saturday</p>
+              <p>09AM - 09PM</p>
+            </div>
+            <div class="open-details">
+              <p>Sunday</p>
+              <p>10AM - 08PM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>2023 All right reserved</p>
     </section>
     <script>
       const galleryItem = document.getElementsByClassName("gallery-item");
