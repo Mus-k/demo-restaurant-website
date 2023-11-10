@@ -1,0 +1,49 @@
+.footer {
+  background-color: #333;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+}
+
+.footer-container .footer-item h3 {
+  color: #fea116;
+}
+.footer-container .footer-item div p a {
+  color: #fff;
+  padding: 0px 7px;
+  text-decoration: none;
+}
+.footer-container .footer-item div p .fa-solid {
+  color: #fea116;
+  cursor: pointer;
+}
+.social-item {
+  display: flex;
+  gap: 10px;
+}
+.open-details p {
+  color: #fff;
+}
+.title-company {
+  padding-top: 19px;
+}
+
+@media screen and (max-width: 670px) {
+  .footer-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-left: 30px;
+  }
+}
